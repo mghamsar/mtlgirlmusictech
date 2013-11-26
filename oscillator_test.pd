@@ -1,4 +1,4 @@
-#N canvas 335 420 723 435 10;
+#N canvas 335 420 769 422 10;
 #X obj 87 206 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X msg 318 58 0;
@@ -10,7 +10,7 @@
 #X text 314 6 Stop Sound;
 #X text 402 9 Start Sound;
 #X obj 27 246 dac~;
-#X obj 26 68 osc~ 441;
+#X obj 26 111 osc~ 441;
 #X obj 29 31 hsl 128 15 200 600 0 0 empty empty empty -2 -8 0 10 -262144
 -1 -1 0 1;
 #X obj 27 186 *~ 0.1;
@@ -25,11 +25,15 @@
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
 #X coords 0 1.5 200 -1.5 400 140 1 0 0;
-#X restore 273 186 graph;
+#X restore 333 186 graph;
 #X obj 87 225 metro 300;
 #X text 24 10 Control Frequency;
 #X text 170 11 Control Gain (Volume);
 #X obj 87 246 tabwrite~ simple_sine;
+#X text 32 89 The Oscillator;
+#X text 110 204 Activate Plotting;
+#X text 152 223 Metronome;
+#X text 223 245 Write to Table;
 #X connect 0 0 13 0;
 #X connect 1 0 10 1;
 #X connect 2 0 10 1;
